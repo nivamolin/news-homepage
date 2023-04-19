@@ -1,0 +1,32 @@
+:root {
+    /* Widths */
+    --mobile: 375px;
+    --desktop: 1440px;
+
+    /* Colors */
+    --naranja: hsl(35, 77%, 62%);
+    --naranja-oscuro: hsl(5, 85%, 63%);
+    --blanco: hsl(36, 100%, 99%);
+    --gris: hsl(233, 8%, 79%);
+    --azul: hsl(236, 13%, 42%);
+
+
+
+    /* Typography */
+    --font-family: 'Inter', sans-serif;
+
+}
+
+
+*, 
+::after,
+::before {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;     
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 62.5%;
+}
