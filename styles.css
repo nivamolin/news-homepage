@@ -15,7 +15,11 @@
     /* Typography */
     --font-family: 'Inter', sans-serif;
 
-}
+    /* utilities */
+
+    --padding-body: 0px 16px;
+    --margin-body: 29px 0px;
+ }
 
 
 *, 
@@ -30,3 +34,27 @@ html {
     box-sizing: inherit;
     font-size: 62.5%;
 }
+
+/* ---- header ---- */ 
+
+.header {
+    height: 100px;  
+    position: relative;
+    width: 100%;
+}
+
+.header__container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-body);
+    margin: var(--margin-body);
+}
+
+.header__container2 {
+    position: absolute;
+    right: 5%;
+}
+
