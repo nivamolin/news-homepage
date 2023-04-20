@@ -14,11 +14,12 @@
 
     /* Typography */
     --font-family: 'Inter', sans-serif;
+    --font-size: 1.6rem;
 
     /* utilities */
 
     --padding-body: 0px 16px;
-    --margin-body: 29px 0px;
+    --margin-body: 40px 0px;
  }
 
 
@@ -35,16 +36,20 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: var(--font-family);
+}
+
 /* ---- header ---- */ 
 
 .header {
-    height: 100px;  
+    height: 60px;  
     position: relative;
     width: 100%;
 }
 
 .header__container {
-    position: fixed;
+    position:relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -53,8 +58,44 @@ html {
     margin: var(--margin-body);
 }
 
+.header__container1 {
+    position: absolute;
+}
+
 .header__container2 {
     position: absolute;
     right: 5%;
 }
 
+/* ---- Main ---- */ 
+
+.main {
+    position: relative;
+    padding: var(--padding-body);
+    font-size: var(--font-size);
+}
+
+.main__image {
+    width: 100%;;
+}
+
+.main__title {
+    margin: 20px 0px;
+    font-size: 4.1rem;
+}
+
+.main__pgraph {
+    margin-bottom: 20px;
+    color: var(--azul);
+}
+
+.main__button {
+    padding: 16px 29px;
+    background-color: var(--naranja-oscuro); 
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 10px 0px 60px 0px;
+}
